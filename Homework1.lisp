@@ -20,7 +20,7 @@
     (x) 
     (cond 
     ;; if x is 1 then return 1 
-        ((= x 1) 
+        ((equal x 1) 
         (1))
         ;; otherwise add x and recursively call the function
         (x + factorialSum
@@ -34,4 +34,11 @@
 (defun totalBackwards)
 
 ;;Problem6
-(defun palindrome)
+(defun palindrome (x)
+;;check if the beginning and end match
+(cond (equal x y)
+;; if they do, continue checking, most likely recursively
+()
+)
+;;the check did not go through, end checking
+)
