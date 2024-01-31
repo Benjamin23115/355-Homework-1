@@ -1,44 +1,73 @@
-;;Problem 1
+;Problem1
 (defun intmax 
     (x y)
-    (cond (
-    ;;if x is less than y then print y
-        (< x y)
-        (print 
-            (y)))
-            ;; otherwise print x
-        (print 
-            (x))))
-;;Problem 2
+    (cond
+        (
+            (< x y) 
+            (print y)) ; If x is less than y, print y
+        (t 
+            (print x))))     ; Otherwise, print x
+
+;Problem2
 (defun dup 
     (x)
-    (print '
-        (x,x)))
+    (print 
+x)
+    (print x))
 
-;;Problem 3
+;Problem3
 (defun factorialSum 
     (x) 
     (cond 
-    ;; if x is 1 then return 1 
-        ((equal x 1) 
-        (1))
-        ;; otherwise add x and recursively call the function
-        (x + factorialSum
-            (x-1)) ))
+        (                                                                                                
+            (equal x 1) 
+1)
+;otherwise add x and recursively call the function
+        (t 
+            (+ x
+                (factorialSum
+                    (- x 1) )) )))
 
-;;Problem 4
-(defun backwards)
+;Problem4
+(defun backwards
+    (x)
+    (cond 
+        (equal
+            (cdr x)nil)
+        (print
+            (x)))
+    (t 
+        (backwards
+            (x))))
 
 
-;;Problem5
-(defun totalBackwards)
+;Problem5
+(defun totalBackwards
+    (x))
 
-;;Problem6
-(defun palindrome (x)
-;;check if the beginning and end match
-(cond (equal x y)
-;; if they do, continue checking, most likely recursively
-()
+;Problem6
+(defun palindrome 
+    (x)
+;check if the beginning and end match
+    (cond 
+        (
+            (equal x y)T)
+;if they do, continue checking, most likely recursively
+        ()
 )
-;;the check did not go through, end checking
+;the check did not go through, end checking
 )
+
+
+;Problem 1
+;(print 
+;    (intmax 3 6))
+;Problem 2
+;(print 
+;    (dup 2))
+;Problem 3
+; (print 
+;    (factorialSum 5))
+
+;Problem 4
+(print (backwards '(a b c d e f)))
