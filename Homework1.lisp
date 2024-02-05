@@ -36,8 +36,25 @@
      (append (backwards (cdr x)) (list (car x))))))
 
 ;Problem5
-;; (defun totalBackwards
-;;     (x))
+(defun totalBackwards (x)
+  (cond
+    ((null x) nil)
+    ((atom x) x)
+    (t (cons (totalBackwards (cdr x)) (reverseNestedList (car x))))))
+
+(defun reverseNestedList (x)
+  (cond
+    ((null x) nil)
+    ((atom x) x)
+    (t (mapcar #'reverseNestedList (reverse x)))))
+
+(defun reverseNestedHelper (x)
+  (cond
+    ((null x) nil)
+    ((atom (car x)) (append (reverseNestedHelper (cdr x)) (list (car x))))
+    (t (append (reverseNestedHelper (cdr x)) (list (reverseNestedHelper (car x)))))))
+
+
 
 (defun palindrome (x)
   (cond
@@ -74,7 +91,6 @@
 ;; (print (backwards (quote(a b c d e f))))
 
 ;Problem 5
-
-
+(print  (totalbackwards (quote (a (b c) ((l k (t)) h i)))))
 ;Problem 6
-(print (palindrome '(a b c d c b a)))
+;; (print (palindrome '(a b c d c b a)))
