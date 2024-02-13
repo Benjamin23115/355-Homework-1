@@ -70,28 +70,23 @@
 
 
 ;Problem6
-(defun palindrome 
-    (x)
-    (cond
-        ((null x) T)                          ; An empty list is a palindrome
-        ((equal (car x) (last-element x))     ; Check if the first element is equal to the last element
-            (palindrome (remove-last-element x))) ; Recursively check the rest without the last element
-        (t nil)))                             ; If any pair of elements doesn't match, it's not a palindrome
+(defun palindrome (x)
+  (cond
+    ((null x) T)                           ; An empty list is a palindrome
+    ((equal (car x) (last-element x))      ; Check if the first element is equal to the last element
+     (palindrome (remove-first-last x)))   ; Recursively check the rest without the first and last elements
+    (t nil)))                              ; If any pair of elements doesn't match, it's not a palindrome
 
-(defun last-element 
-    (x)
-    (if 
-        (cdr x)
-        (last-element 
-            (cdr x))
-        (car x)))
 
-(defun remove-last-element 
-    (x)
-    (if (null x) nil
-    (if (null (cdr x)) nil
-        (cons (car x) (remove-last-element (cdr x))))))
+(defun last-element (x)
+  (if (cdr x)
+      (last-element (cdr x))
+      (car x)))
 
+(defun remove-first-last (x)
+  (if (or (null x) (null (cdr x)))
+      nil
+      (cons (car x) (remove-first-last (butlast x 1)))))
 
 
 ;Problem1
@@ -116,14 +111,14 @@
 ;;                (ba)ba))))
 
 ;Problem5
-(print  
-    (totalBackwards 
-        (quote 
-            (a 
-                (b c) 
-                (
-                    (l k 
-                        (t)) h i)))))
+;; (print  
+;;     (totalBackwards 
+;;         (quote 
+;;             (a 
+;;                 (b c) 
+;;                 (
+;;                     (l k 
+;;                         (t)) h i)))))
 ;Problem6
 ;;(print 
 ;;    (palindrome '

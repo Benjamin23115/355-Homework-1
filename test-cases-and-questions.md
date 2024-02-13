@@ -56,7 +56,14 @@
 **Expected Result:** (0 (1 0 +) - (2 4 -) (6 5 +)) 
 ### Program 6 Test Cases
 
-_(No test cases provided)_
+- **Input:**  '(a b c d c b a)
+  **Expected Result:**  T
+- **Input:**  '(a b c d c b b)
+  **Expected Result:** NIL
+- **Input:**  '(racecar)
+  **Expected Result:** T
+- **Input:** '(raccar)
+  **Expected Result:** T 
 
 ## VI. Minimal Set of Test Cases Questions
 
