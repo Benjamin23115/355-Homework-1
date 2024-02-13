@@ -79,18 +79,18 @@
 
 ;Problem 1
 ;; (print 
-;;    (intmax 6 7))
+  ;;  (intmax (+ 5 1) 7))
 ;Problem 2
 ;; (print 
-;;     (dup 2))
+    ;; (dup '(abcdef)))
 ;Problem 3
 ;;  (print 
-;;     (factorialSum 5))
+;;     (factorialSum (- 20 5)))
 
 ;Problem 4
-;; (print (backwards (quote(a b c d e f))))
+(print (backwards '((abba) (ab(ba)ba))))
 
 ;Problem 5
-(print  (totalbackwards (quote (a (b c) ((l k (t)) h i)))))
+;; (print  (totalbackwards (quote (a (b c) ((l k (t)) h i)))))
 ;Problem 6
 ;; (print (palindrome '(a b c d c b a)))
