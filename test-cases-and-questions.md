@@ -46,8 +46,14 @@
 
 ### Program 5 Test Cases
 
-_(No test cases provided)_
-
+- **Input:** (a (b c) ((l k (t)) h i))
+**Expected Result:** (I H ((T) K L) (C B) A)
+- **Input:** (2 (3 4) ((5 6 (7)) 8 9))
+**Expected Result:** 9 8 7 6 5 4 3 2
+- **Input:** (a (b (c d (e f) g h) i (j k)))
+**Expected Result:** ((K J) I (H G (F E) D C) B A) 
+- **Input:** ((+ 5 6) (- 4 2) (- (+ 0 1 ) 0))
+**Expected Result:** (0 (1 0 +) - (2 4 -) (6 5 +)) 
 ### Program 6 Test Cases
 
 _(No test cases provided)_
