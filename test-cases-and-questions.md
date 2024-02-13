@@ -8,8 +8,8 @@
   **Expected Result:** 5
 - **Input:** 5 5  
   **Expected Result:** 5
-- **Input:** (+ 5 1) 7  
-  **Expected Result:** 7
+- **Input:** (+ 5 1) 
+  **Expected Result:** 6
 
 ### Program 2 Test Cases
 
