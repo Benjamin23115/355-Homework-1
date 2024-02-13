@@ -64,9 +64,6 @@ Yes, it is possible. If the test cases are not designed to be diverse and cover 
 
 ## VII. Results Summary of Deliverables
 
-Record all defects found in the specification inspection, the design process, the design walkthrough, the coding process, and testing.  Also, write a short (half-page or less) analysis of what you can learn about your development and testing strategy.
+Record all defects found in the specification inspection, the design process, the design walkthrough, the coding process, and testing. Also, write a short (half-page or less) analysis of what you can learn about your development and testing strategy.
 
-There were many defects when I started doing this assignment, I originally started thinking of it in C++ format using strings rather than character arrays, which forced me to shift to thinking of it in character arrays to try and be similar to how lisp handles io, with cells and atoms. The design process/walkthrough, coding process and testing was fine, most of the issues I had was with syntax, making sure I was writing the logic correctly for lisp and not the way its written in C/C++. I learned many things about development and testing strategy, 
-<!-- continue -->
-
- 
+There were many defects when I started doing this assignment, I originally started thinking of it in C++ format using strings rather than character arrays, which forced me to shift to thinking of it in character arrays to try and be similar to how lisp handles io, with cells and atoms. The design process/walkthrough, coding process and testing was fine, most of the issues I had was with syntax, making sure I was writing the logic correctly for lisp and not the way its written in C/C++. I learned many things about development and testing strategy,
